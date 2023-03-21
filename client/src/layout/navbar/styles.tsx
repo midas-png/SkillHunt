@@ -21,7 +21,6 @@ export const ItemsWrapper = styled.div`
 
 export const NavbarItem = styled.span`
   color: ${({ theme }) => theme.palette.secondary};
-  font-family: ${({ theme }) => theme.fontFamily.primary};
   cursor: pointer;
 `;
 
