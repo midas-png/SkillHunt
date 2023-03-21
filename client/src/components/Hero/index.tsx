@@ -1,8 +1,8 @@
-import { HeroWrapper, HeroBackgroundImage } from "./styles";
-import { Assets } from "assets";
+import { HeroWrapper, HeroBackgroundImage } from './styles';
+import { Assets } from 'assets';
 
 export const Hero = () => (
-    <HeroWrapper>
-        <HeroBackgroundImage src={Assets.Hero} />
-    </HeroWrapper>
+  <HeroWrapper>
+    <HeroBackgroundImage src={Assets.Hero} />
+  </HeroWrapper>
 );

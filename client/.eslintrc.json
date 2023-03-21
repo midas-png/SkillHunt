@@ -1,0 +1,77 @@
+{
+	"env": {
+		"browser": true,
+		"amd": true,
+    	"node": true,
+		"es2021": true
+	},
+	"settings": {
+		"react": {
+			"version": "latest"
+		},
+		"import/resolver": {
+			"node": {
+				"moduleDirectory": ["node_modules", "src/"],
+				"paths": ["src"],
+				"extensions": [".ts", ".tsx"]
+			}
+		}
+	},
+	"extends": [
+		"plugin:@typescript-eslint/recommended",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"prettier"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["react", "@typescript-eslint", "import", "prettier"],
+	"rules": {
+		"import/no-default-export": "warn",
+		"import/order": [
+			"error",
+			{
+				"pathGroups": [
+					{
+						"pattern": "~/**",
+						"group": "external"
+					}
+				]
+			}
+		],
+		"max-len": ["error", { "code": 120 }],
+		"indent": "off",
+		"prettier/prettier": [2, {
+			"parser": "typescript",
+			"semi": true,
+			"tabWidth": 2,
+			"printWidth": 80,
+			"singleQuote": true,
+			"jsxSingleQuote": true,
+			"bracketSameLine": true,
+			"endOfLine": "auto"
+		}],
+		"@typescript-eslint/indent": ["error", 2],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"react/sort-prop-types": [
+			"error",
+			{
+				"callbacksLast": true,
+				"ignoreCase": false,
+				"requiredFirst": true,
+				"sortShapeProp": true,
+				"noSortAlphabetically": false
+			}
+		],
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
+		"react/no-unescaped-entities": "off"
+	}
+}
