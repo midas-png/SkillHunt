@@ -8,5 +8,6 @@ export interface IProps {
   variant?: Variant;
   size?: Size;
   loading?: boolean;
+  disableShadow?: boolean;
   onClick?: () => void;
 }

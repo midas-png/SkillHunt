@@ -6,6 +6,7 @@ export const Button: FC<IProps> = ({
   variant,
   size,
   loading,
+  disableShadow,
   children,
   onClick,
 }) => {
@@ -13,6 +14,7 @@ export const Button: FC<IProps> = ({
     <ButtonComponent
       variant={variant}
       size={size}
+      disableShadow={disableShadow}
       disabled={loading || false}
       onClick={onClick}>
       {loading ? <SpinLoader /> : children}

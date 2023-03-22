@@ -8,7 +8,7 @@ export default {
   argTypes: {
     children: {
       type: 'string',
-      description: 'button content',
+      description: 'Button content',
       defaultValue: 'Button',
       control: {
         type: 'text',
@@ -40,13 +40,17 @@ export default {
         type: 'boolean',
       },
     },
+    disableShadow: {
+      type: 'boolean',
+      description: "Disables button's box-shadow",
+      defaultValue: false,
+      control: {
+        type: 'boolean',
+      },
+    },
   },
 } as Meta;
 
 const Template: Story<IProps> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  children: 'Press me',
-  variant: 'primary',
-};
