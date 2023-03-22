@@ -55,21 +55,6 @@ const sizeMap = {
   `,
 };
 
-const shadowMap = {
-  primary: css`
-    border: 3px solid ${({ theme }) => theme.palette.secondary};
-    box-shadow: 5px 5px 0px 0px ${({ theme }) => theme.palette.primary};
-  `,
-  secondary: css`
-    border: 3px solid ${({ theme }) => theme.palette.primary};
-    box-shadow: 5px 5px 0px 0px ${({ theme }) => theme.palette.secondary};
-  `,
-  tertiary: css`
-    border: 3px solid ${({ theme }) => theme.palette.secondary};
-    box-shadow: 5px 5px 0px 0px ${({ theme }) => theme.palette.primary};
-  `,
-};
-
 export const ButtonComponent = styled.button<IProps>`
   display: flex;
   justify-content: center;
@@ -81,7 +66,6 @@ export const ButtonComponent = styled.button<IProps>`
   cursor: pointer;
   ${({ variant = 'primary' }) => variantMap[variant]};
   ${({ size = 'medium' }) => sizeMap[size]};
-  ${({ shadow }) => shadow && shadowMap[shadow]};
 `;
 
 export const SpinLoader = styled(AiOutlineLoading3Quarters)`

@@ -32,6 +32,12 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react", "@typescript-eslint", "import", "prettier"],
+	"ignorePatterns": [
+        "/src/stories/*.tsx",
+        "/src/stories/*.css",
+        "/src/stories/*.mdx", 
+        "/src/stories/assets/*.svg"
+    ],
 	"rules": {
 		"import/no-default-export": "warn",
 		"import/order": [

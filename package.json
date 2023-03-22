@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@storybook/addon-styling": "^0.3.1"
+  }
+}
