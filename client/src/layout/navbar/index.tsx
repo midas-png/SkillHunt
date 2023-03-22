@@ -3,7 +3,9 @@ import {
   ItemsWrapper,
   NavbarItem,
   AuthorizationWrapper,
+  NavbarBurger,
 } from './styles';
+import { Button } from 'ui';
 
 export const Navbar = () => (
   <NavbarWrapper>
@@ -13,7 +15,8 @@ export const Navbar = () => (
     </ItemsWrapper>
     <AuthorizationWrapper>
       <NavbarItem>Sign In</NavbarItem>
-      <NavbarItem>test</NavbarItem>
+      <Button>Sign Up</Button>
     </AuthorizationWrapper>
+    <NavbarBurger />
   </NavbarWrapper>
 );

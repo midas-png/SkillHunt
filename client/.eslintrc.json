@@ -57,7 +57,6 @@
 			"bracketSameLine": true,
 			"endOfLine": "auto"
 		}],
-		"@typescript-eslint/indent": ["error", 2],
 		"quotes": ["error", "single"],
 		"semi": ["error", "always"],
 		"react/sort-prop-types": [
