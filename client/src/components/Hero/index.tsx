@@ -2,6 +2,8 @@ import { FC } from 'react';
 import {
   HeroWrapper,
   HeroBackgroundImage,
+  Subtitle,
+  SubtitleWrapper,
   TitlesWrapper,
   TitleWrapper,
 } from './styles';
@@ -13,7 +15,7 @@ export const Hero: FC = () => (
     <HeroBackgroundImage src={Assets.Hero} />
     <TitlesWrapper>
       <TitleWrapper>
-        <Title fontSize={120} weight='bold' textAlign='center'>
+        <Title fontSize={120} textAlign='center'>
           Land a job
         </Title>
       </TitleWrapper>
@@ -23,5 +25,11 @@ export const Hero: FC = () => (
         </Title>
       </TitleWrapper>
     </TitlesWrapper>
+    <SubtitleWrapper>
+      <Subtitle>
+        The best place to discover & apply to the coolest start up jobs, without
+        the black box.
+      </Subtitle>
+    </SubtitleWrapper>
   </HeroWrapper>
 );

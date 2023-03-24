@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const HeroWrapper = styled.div`
   position: relative;
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
   height: 100vh;
 `;
 
@@ -29,7 +32,7 @@ export const TitlesWrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div<{ reversed?: boolean }>`
-  ${({ reversed }) => (reversed ? 'margin-left: 10vw;' : 'margin-right: 29%;')}
+  ${({ reversed }) => (reversed ? 'margin-left: 15vw;' : 'margin-right: 29%;')}
 
   @media screen and (max-width: 550px) {
     margin-left: 0;
@@ -45,4 +48,21 @@ export const TitleWrapper = styled.div<{ reversed?: boolean }>`
       }
     }
   `}
+`;
+
+export const SubtitleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Subtitle = styled.span`
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 640px;
+  color: ${({ theme }) => theme.palette.secondary};
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
