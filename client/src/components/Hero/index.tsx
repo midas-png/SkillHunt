@@ -6,8 +6,9 @@ import {
   SubtitleWrapper,
   TitlesWrapper,
   TitleWrapper,
+  TextfieldWrapper,
 } from './styles';
-import { Title } from 'ui';
+import { Button, Title, Textfield } from 'ui';
 import { Assets } from 'assets';
 
 export const Hero: FC = () => (
@@ -31,5 +32,11 @@ export const Hero: FC = () => (
         the black box.
       </Subtitle>
     </SubtitleWrapper>
+    <TextfieldWrapper>
+      <Textfield />
+      <Button variant='secondary' size='large' disableShadow>
+        Explore
+      </Button>
+    </TextfieldWrapper>
   </HeroWrapper>
 );

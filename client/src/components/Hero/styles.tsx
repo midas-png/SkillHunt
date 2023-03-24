@@ -6,6 +6,10 @@ export const HeroWrapper = styled.div`
   gap: 35px;
   flex-direction: column;
   height: 100vh;
+
+  div {
+    z-index: 2;
+  }
 `;
 
 export const HeroBackgroundImage = styled.img`
@@ -64,5 +68,21 @@ export const Subtitle = styled.span`
 
   @media screen and (max-width: 768px) {
     text-align: center;
+  }
+`;
+
+export const TextfieldWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 50px;
+
+    input,
+    button {
+      width: 100%;
+    }
   }
 `;

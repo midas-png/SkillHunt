@@ -48,9 +48,13 @@ const sizeMap = {
     height: 40px;
     min-width: 150px;
     padding: 0 10px;
+    font-size: 14px;
   `,
   large: css`
-    padding: 12px 60px;
+    height: 54px;
+    min-width: 218px;
+    padding: 0 20px;
+    font-size: 18px;
   `,
   full: css`
     width: 100%;
@@ -62,7 +66,6 @@ export const ButtonComponent = styled.button<IProps>`
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  font-size: 14px;
   letter-spacing: 0.36px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
