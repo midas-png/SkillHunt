@@ -29,10 +29,29 @@ export const ItemsWrapper = styled.div`
 `;
 
 export const NavbarItem = styled.span`
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 18px;
+  letter-spacing: 0.48px;
   color: ${({ theme }) => theme.palette.secondary};
   cursor: pointer;
-  font-size: 14px;
-  letter-spacing: 0.48px;
+
+  &:after {
+    display: block;
+    content: '';
+    padding-bottom: 5px;
+    border-bottom: solid 2px currentColor;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const AuthorizationWrapper = styled.div`
@@ -49,8 +68,9 @@ export const AuthorizationWrapper = styled.div`
 export const NavbarBurger = styled(CiMenuBurger)`
   display: none;
   margin-left: auto;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     display: block;
