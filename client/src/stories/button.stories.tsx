@@ -1,9 +1,9 @@
 import { Meta, Story } from '@storybook/react';
 import { Button } from '../ui';
-import { IProps } from 'ui/button/props';
+import { IProps } from '../ui/button/props';
 
 export default {
-  title: 'ui',
+  title: 'UI/button',
   component: Button,
   argTypes: {
     children: {
