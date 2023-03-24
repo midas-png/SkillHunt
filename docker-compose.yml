@@ -1,11 +1,16 @@
-services:
+version: '3.3'
 
-  back:
-    web:
-      build: ./server
-      command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
-      container_name: server
-      volumes:
-        - .:/server
-      ports:
-        - "8000:8000"
+services:
+  client:
+    build: ./client
+    ports:
+      - "80:80"
+
+  server:
+    build: ./server
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    container_name: server
+    volumes:
+      - .:/server
+    ports:
+      - "8000:8000"
