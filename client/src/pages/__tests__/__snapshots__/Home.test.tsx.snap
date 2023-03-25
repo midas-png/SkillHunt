@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page render Home page snapshot tests 1`] = `
+<span
+  class="sc-qRumB cBNnCH"
+  font-size="120"
+>
+  Land a job
+</span>
+`;
+
+exports[`Home page render Home page snapshot tests 2`] = `
+<span
+  class="sc-qRumB cBNnCH"
+  font-size="120"
+>
+  the easy way
+</span>
+`;
+
+exports[`Home page render Home page snapshot tests 3`] = `
+<span
+  class="sc-jTrPJq kSlZxv"
+>
+  The best place to discover & apply to the coolest start up jobs, without the black box.
+</span>
+`;
+
+exports[`Home page render Home page snapshot tests 4`] = `
+<button
+  class="sc-iAEyYk cxsxSs"
+>
+  Explore
+</button>
+`;
