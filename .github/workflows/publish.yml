@@ -36,7 +36,7 @@ jobs:
             tar -xf publish.tar -C ~/
             rm publish.tar
             cd publish
-            cd ../server
+            cd ./server
             mkdir env
             cd env
             echo POSTGRES_PORT=${{ secrets.POSTGRES_PORT }} > production.env
