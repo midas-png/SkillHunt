@@ -24,6 +24,8 @@ services:
       - "5432:5432"
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
+    env_file:
+      - server/env/production.env
 
 volumes:
   postgres_data:
