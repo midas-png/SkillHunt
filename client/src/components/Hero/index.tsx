@@ -9,6 +9,7 @@ import {
   TextfieldWrapper,
   MainCanvas,
 } from './styles';
+import { LazyShow } from 'components';
 import { Button, Circle3D, Title, Textfield } from 'ui';
 import { Assets } from 'assets';
 
@@ -16,21 +17,25 @@ export const Hero: FC = () => (
   <HeroWrapper>
     <HeroBackgroundImage src={Assets.Hero} />
     <TitlesWrapper>
-      <TitleWrapper>
-        <Title fontSize={120} textAlign='center'>
-          Land a job
-        </Title>
-      </TitleWrapper>
-      <TitleWrapper reversed>
-        <Title fontSize={120} textAlign='center'>
-          the easy way
-        </Title>
-      </TitleWrapper>
+      <LazyShow direction='top'>
+        <TitleWrapper>
+          <Title fontSize={120} textAlign='center'>
+            Land a job
+          </Title>
+        </TitleWrapper>
+        <TitleWrapper reversed>
+          <Title fontSize={120} textAlign='center'>
+            the easy way
+          </Title>
+        </TitleWrapper>
+      </LazyShow>
     </TitlesWrapper>
     <SubtitleWrapper>
       <Subtitle>
-        The best place to discover & apply to the coolest start up jobs, without
-        the black box.
+        <LazyShow direction='top' delay={0.5}>
+          The best place to discover & apply to the coolest start up jobs,
+          without the black box.
+        </LazyShow>
       </Subtitle>
     </SubtitleWrapper>
     <TextfieldWrapper>
