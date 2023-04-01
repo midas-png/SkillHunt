@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Canvas } from 'react-three-fiber';
 
 export const HeroWrapper = styled.div`
   position: relative;
@@ -84,5 +85,16 @@ export const TextfieldWrapper = styled.div`
     button {
       width: 100%;
     }
+  }
+`;
+
+export const MainCanvas = styled(Canvas).attrs({
+  style: {
+    position: 'absolute',
+    zIndex: 1,
+  },
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;

@@ -7,8 +7,9 @@ import {
   TitlesWrapper,
   TitleWrapper,
   TextfieldWrapper,
+  MainCanvas,
 } from './styles';
-import { Button, Title, Textfield } from 'ui';
+import { Button, Circle3D, Title, Textfield } from 'ui';
 import { Assets } from 'assets';
 
 export const Hero: FC = () => (
@@ -38,5 +39,19 @@ export const Hero: FC = () => (
         Explore
       </Button>
     </TextfieldWrapper>
+    <MainCanvas>
+      <Circle3D
+        image={Assets.Hero}
+        position={[3.7, 1.4, 0]}
+        rotation={[1.5, 1.6, -0.1]}
+        args={[0.45, 0.45, 0.15, 55, 1]}
+      />
+      <Circle3D
+        image={Assets.Hero}
+        position={[-5, -1.5, 0]}
+        rotation={[1.3, 1.5, 0.2]}
+        args={[0.5, 0.5, 0.15, 55, 1]}
+      />
+    </MainCanvas>
   </HeroWrapper>
 );
