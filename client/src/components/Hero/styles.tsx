@@ -6,7 +6,9 @@ export const HeroWrapper = styled.div`
   display: flex;
   gap: 35px;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 850px;
+  padding-bottom: 80px;
 
   div {
     z-index: 2;

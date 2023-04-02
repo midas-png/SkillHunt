@@ -3,7 +3,7 @@ import { IProps } from './props';
 
 const headingStyles = {
   h1: css`
-    font-size: 36px;
+    font-size: 56px;
   `,
   h2: css`
     font-size: 28px;

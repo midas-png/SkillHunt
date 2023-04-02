@@ -1,3 +1,8 @@
-import { Hero } from 'components';
+import { Hero, Benefits } from 'components';
 
-export const Home = () => <Hero />;
+export const Home = () => (
+  <>
+    <Hero />
+    <Benefits />
+  </>
+);

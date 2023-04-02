@@ -38,6 +38,20 @@ const variantMap = {
       color: ${({ theme }) => theme.palette.primary};
     }
   `,
+  tertiary: css`
+    background: ${({ theme }) =>
+      `linear-gradient(to left, ${theme.palette.tertiary} 50%, ${theme.palette.secondary} 50%) right`};
+    background-size: 200% 100%;
+    color: ${({ theme }) => theme.palette.secondary};
+    border: ${({ theme }) => `2px solid ${theme.palette.secondary}`};
+    box-shadow: 6px 6px 0px 0px ${({ theme }) => theme.palette.secondary};
+
+    &:hover {
+      background-position: left;
+      border-color: ${({ theme }) => theme.palette.primary};
+      color: ${({ theme }) => theme.palette.primary};
+    }
+  `,
 };
 
 const sizeMap = {
