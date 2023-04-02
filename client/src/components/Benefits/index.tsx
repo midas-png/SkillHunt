@@ -22,7 +22,7 @@ export const Benefits = () => (
     </BenefitsHeaderWrapper>
     <BenefitsCardsWrapper>
       {BENEFITS.map(({ title, subTitle, Icon }) => (
-        <BenefitCardWrapper key={Math.random()}>
+        <BenefitCardWrapper key={title}>
           <Icon />
           <Title variant='h3' light>
             {title}
