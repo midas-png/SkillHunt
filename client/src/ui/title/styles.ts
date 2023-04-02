@@ -6,7 +6,7 @@ const headingStyles = {
     font-size: 56px;
   `,
   h2: css`
-    font-size: 28px;
+    font-size: 38px;
   `,
   h3: css`
     font-size: 24px;
