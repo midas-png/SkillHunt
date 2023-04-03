@@ -12,7 +12,7 @@ interface IProps {
 
 export const LazyShow: FC<IProps> = ({ direction, delay, children }) => {
   const controls = useAnimation();
-  const rootRef = useRef(null);
+  const rootRef = useRef(null!);
   const onScreen = useOnScreen(rootRef);
 
   function directionHandler() {

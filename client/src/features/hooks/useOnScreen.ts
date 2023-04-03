@@ -1,6 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, MutableRefObject } from 'react';
 
-export const useOnScreen = (ref, rootMargin = '0px') => {
+export const useOnScreen = (
+  ref: MutableRefObject<HTMLElement>,
+  rootMargin = '0px'
+) => {
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {

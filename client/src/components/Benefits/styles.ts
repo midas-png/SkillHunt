@@ -9,10 +9,6 @@ export const BenefitsWrapper = styled.div`
   padding: 150px 85px;
   gap: 80px;
   min-height: 100vh;
-
-  div {
-    z-index: 2;
-  }
 `;
 
 export const BenefitsHeaderWrapper = styled.div`

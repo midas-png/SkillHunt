@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { AiOutlineHeart } from 'react-icons/ai';
 import {
   TrendingJobsWrapper,
@@ -17,7 +18,7 @@ import {
 import { TRENDING_JOBS } from './data';
 import { Button, Title } from 'ui';
 
-export const TrendingJobs = () => {
+export const TrendingJobs: FC = () => {
   return (
     <TrendingJobsWrapper>
       <TrendingTitleWrapper>

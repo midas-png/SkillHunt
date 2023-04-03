@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import {
   BenefitsWrapper,
   BenefitsHeaderWrapper,
@@ -8,7 +9,7 @@ import {
 import { BENEFITS } from './data';
 import { Title, Button } from 'ui';
 
-export const Benefits = () => (
+export const Benefits: FC = () => (
   <BenefitsWrapper>
     <BenefitsHeaderWrapper>
       <Title variant='h1' light>
