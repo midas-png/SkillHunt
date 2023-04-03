@@ -9,12 +9,17 @@ export const BenefitsWrapper = styled.div`
   padding: 150px 85px;
   gap: 80px;
   min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    padding: 150px 50px;
+  }
 `;
 
 export const BenefitsHeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 25px;
   flex-wrap: wrap;
 `;
 

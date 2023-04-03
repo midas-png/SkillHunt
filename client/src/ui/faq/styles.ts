@@ -11,11 +11,11 @@ export const FaqWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 105px;
   width: 100%;
   background: #262626;
-  padding: 0 26px;
+  padding: 26px;
   cursor: pointer;
+  z-index: 2;
 `;
 
 export const FaqQuestion = styled.span`
@@ -37,8 +37,8 @@ export const AnswerWrapper = styled.div<{ open: boolean }>`
   transition: all 0.3s ease-in-out;
 `;
 
-export const Answer = styled.span`
-  font-size: 21px;
+export const Answer = styled.span<{ open: boolean }>`
+  font-size: ${({ open }) => (open ? '21px' : '0')};
   letter-spacing: 0.72px;
   color: ${({ theme }) => theme.palette.secondary};
 `;

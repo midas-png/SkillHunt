@@ -20,7 +20,7 @@ export const Faq: FC<IProps> = ({ question, children }) => {
         <FaqArrow open={open} />
       </FaqWrapper>
       <AnswerWrapper open={open}>
-        <Answer>{children}</Answer>
+        <Answer open={open}>{children}</Answer>
       </AnswerWrapper>
     </ComponentWrapper>
   );

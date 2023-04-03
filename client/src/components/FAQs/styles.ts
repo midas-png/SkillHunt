@@ -7,6 +7,10 @@ export const ComponentWrapper = styled.div`
   background: ${({ theme }) => theme.palette.secondary};
   padding: 130px 110px;
   gap: 56px;
+
+  @media screen and (max-width: 768px) {
+    padding: 130px 50px;
+  }
 `;
 
 export const FaqsWrapper = styled.div`
