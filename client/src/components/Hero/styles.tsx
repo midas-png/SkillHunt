@@ -6,8 +6,6 @@ export const HeroWrapper = styled.div`
   display: flex;
   gap: 35px;
   flex-direction: column;
-  min-height: 100vh;
-  max-height: 850px;
   padding-bottom: 80px;
 
   div {
@@ -39,6 +37,8 @@ export const TitlesWrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div<{ reversed?: boolean }>`
+  display: flex;
+  flex-wrap: wrap;
   ${({ reversed }) => (reversed ? 'margin-left: 15vw;' : 'margin-right: 29%;')}
 
   @media screen and (max-width: 550px) {
@@ -59,6 +59,7 @@ export const TitleWrapper = styled.div<{ reversed?: boolean }>`
 
 export const SubtitleWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 `;
@@ -78,10 +79,12 @@ export const TextfieldWrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 16px;
+  min-width: 350px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;
+    margin-top: 25%;
 
     input,
     button {

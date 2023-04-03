@@ -45,7 +45,7 @@ export const TitleComponent = styled.span<IProps>`
     }
 
     @media screen and (max-width: 420px) {
-      font-size: ${fontSize / 3}px;
+      font-size: ${fontSize / 2.5}px;
     }
     `}
   ${({ textAlign = 'start' }) => `text-align: ${textAlign};`}
