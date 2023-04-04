@@ -8,6 +8,7 @@ export const Title: FC<IProps> = ({
   fontSize,
   textAlign,
   light,
+  letterSpacing,
   children,
 }) => (
   <TitleComponent
@@ -15,6 +16,7 @@ export const Title: FC<IProps> = ({
     weight={weight}
     fontSize={fontSize}
     textAlign={textAlign}
+    letterSpacing={letterSpacing}
     light={light}>
     {children}
   </TitleComponent>

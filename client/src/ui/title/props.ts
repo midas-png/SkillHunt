@@ -10,5 +10,6 @@ export interface IProps {
   fontSize?: number;
   textAlign?: Align;
   light?: boolean;
+  letterSpacing?: number;
   children?: ReactNode;
 }

@@ -19,12 +19,12 @@ export const Hero: FC = () => (
     <TitlesWrapper>
       <LazyShow direction='top'>
         <TitleWrapper>
-          <Title fontSize={120} textAlign='center'>
+          <Title fontSize={120} letterSpacing={5.2} textAlign='center'>
             Land a job
           </Title>
         </TitleWrapper>
         <TitleWrapper reversed>
-          <Title fontSize={120} textAlign='center'>
+          <Title fontSize={120} letterSpacing={5.2} textAlign='center'>
             the easy way
           </Title>
         </TitleWrapper>

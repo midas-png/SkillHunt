@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 type Variant = 'primary' | 'secondary' | 'tertiary';
-type Size = 'small' | 'medium' | 'large' | 'full';
+type Size = 'small' | 'medium' | 'large' | 'full' | 'square';
 
 export interface IProps {
   children?: ReactNode;

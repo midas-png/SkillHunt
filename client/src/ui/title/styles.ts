@@ -31,7 +31,7 @@ export const TitleComponent = styled.span<IProps>`
   font-family: ${({ theme }) => theme.fontFamily.secondary};
   color: ${({ theme }) => theme.palette.secondary};
   line-height: 110%;
-  letter-spacing: 5.2px;
+  letter-spacing: ${({ letterSpacing }) => `${letterSpacing || 1.15}px`};
 
   ${({ variant = 'h1' }) => headingStyles[variant]}
   ${({ weight = 'medium' }) => weightStyles[weight]}

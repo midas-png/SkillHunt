@@ -1,4 +1,11 @@
-import { Hero, Benefits, TrendingJobs, TopCompanies, FAQs } from 'components';
+import {
+  Hero,
+  Benefits,
+  TrendingJobs,
+  TopCompanies,
+  TopCollections,
+  FAQs,
+} from 'components';
 
 export const Home = () => (
   <>
@@ -6,6 +13,7 @@ export const Home = () => (
     <Benefits />
     <TrendingJobs />
     <TopCompanies />
+    <TopCollections />
     <FAQs />
   </>
 );

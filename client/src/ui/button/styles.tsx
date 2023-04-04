@@ -73,6 +73,11 @@ const sizeMap = {
   full: css`
     width: 100%;
   `,
+  square: css`
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+  `,
 };
 
 export const ButtonComponent = styled.button<IProps>`

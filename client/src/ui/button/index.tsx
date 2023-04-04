@@ -10,6 +10,8 @@ export const Button: FC<IProps> = ({
   children,
   onClick,
 }) => {
+  children = size === 'square' ? '+' : children;
+
   return (
     <ButtonComponent
       variant={variant}
