@@ -4,6 +4,7 @@ import {
   TrendingJobs,
   TopCompanies,
   TopCollections,
+  JoinBanner,
   FAQs,
 } from 'components';
 
@@ -15,5 +16,6 @@ export const Home = () => (
     <TopCompanies />
     <TopCollections />
     <FAQs />
+    <JoinBanner />
   </>
 );

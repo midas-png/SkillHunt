@@ -84,7 +84,7 @@ export const TextfieldWrapper = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 0 50px;
-    margin-top: 25%;
+    min-width: auto;
 
     button {
       width: 100%;

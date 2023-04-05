@@ -5,3 +5,4 @@ export { TrendingJobs } from './TrendingJobs';
 export { TopCompanies } from './TopCompanies';
 export { TopCollections } from './TopCollections';
 export { FAQs } from './FAQs';
+export { JoinBanner } from './JoinBanner';
