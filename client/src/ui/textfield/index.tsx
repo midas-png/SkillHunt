@@ -4,6 +4,7 @@ import { TextfieldComponent } from './styles';
 
 export const Textfield: FC<IProps> = ({
   defaultValue,
+  variant,
   placeholder,
   onChange,
 }) => {
@@ -17,6 +18,7 @@ export const Textfield: FC<IProps> = ({
   return (
     <TextfieldComponent
       value={innerValue}
+      variant={variant}
       placeholder={placeholder}
       onChange={handleChange}
     />

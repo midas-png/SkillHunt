@@ -1,8 +1,11 @@
 /* eslint-disable no-unused-vars */
-import { FormEvent } from 'react';
+import { ChangeEvent } from 'react';
+
+type Variant = 'primary' | 'secondary';
 
 export interface IProps {
   defaultValue?: string | number | readonly string[] | undefined;
+  variant?: Variant;
   placeholder?: string;
-  onChange?: (e: FormEvent<HTMLInputElement>) => void;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }

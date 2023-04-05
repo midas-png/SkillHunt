@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-type Variant = 'primary' | 'secondary' | 'tertiary';
+type Variant = 'primary' | 'secondary' | 'tertiary' | 'quaternary';
 type Size = 'small' | 'medium' | 'large' | 'full' | 'square';
 
 export interface IProps {

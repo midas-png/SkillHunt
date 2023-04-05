@@ -42,7 +42,6 @@ export const ButtonArrow = styled(HiArrowNarrowRight)`
 
 export const CollectionsWrapper = styled.div`
   display: flex;
-  //   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
 `;
@@ -53,6 +52,11 @@ export const CollectionCardWrapper = styled.div`
   background: ${({ theme }) => theme.palette.primary};
   border: ${({ theme }) => `2px solid ${theme.palette.secondary}`};
   border-radius: 12px;
+
+  @media screen and (max-width: 420px) {
+    max-width: 340px;
+    width: 100%;
+  }
 `;
 
 export const CardHeaderImage = styled.img`

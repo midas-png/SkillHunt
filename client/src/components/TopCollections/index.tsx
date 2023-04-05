@@ -33,7 +33,8 @@ export const TopCollections: FC = () => {
               <CardBodyInfoWrapper>
                 <Title variant='h3'>{collection.name}</Title>
                 <CardBodyStats>
-                  5 {collection.companies} · {collection.openPositions} Jobs
+                  {collection.companies} Companies · {collection.openPositions}{' '}
+                  Jobs
                 </CardBodyStats>
               </CardBodyInfoWrapper>
               <Button size='square' disableShadow />

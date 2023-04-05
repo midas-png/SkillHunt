@@ -8,6 +8,7 @@ import {
   TitleWrapper,
   TextfieldWrapper,
   MainCanvas,
+  InnerTextfieldWrapper,
 } from './styles';
 import { LazyShow } from 'components';
 import { Button, Circle3D, Title, Textfield } from 'ui';
@@ -39,7 +40,9 @@ export const Hero: FC = () => (
       </Subtitle>
     </SubtitleWrapper>
     <TextfieldWrapper>
-      <Textfield />
+      <InnerTextfieldWrapper>
+        <Textfield />
+      </InnerTextfieldWrapper>
       <Button variant='secondary' size='large' disableShadow>
         Explore
       </Button>

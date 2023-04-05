@@ -86,11 +86,15 @@ export const TextfieldWrapper = styled.div`
     padding: 0 50px;
     margin-top: 25%;
 
-    input,
     button {
       width: 100%;
     }
   }
+`;
+
+export const InnerTextfieldWrapper = styled.div`
+  min-width: 30%;
+  width: auto;
 `;
 
 export const MainCanvas = styled(Canvas).attrs({
