@@ -6,3 +6,4 @@ export { TopCompanies } from './TopCompanies';
 export { TopCollections } from './TopCollections';
 export { FAQs } from './FAQs';
 export { JoinBanner } from './JoinBanner';
+export { EntryModal } from './EntryModal';

@@ -66,6 +66,12 @@ const variantMap = {
       color: ${({ theme }) => theme.palette.primary};
     }
   `,
+  quinary: css`
+    background: ${({ theme }) => theme.palette.secondary};
+    color: ${({ theme }) => theme.palette.primary};
+    border: ${({ theme }) => `2px solid ${theme.palette.secondary}`};
+    box-shadow: 6px 6px 0px 0px ${({ theme }) => theme.palette.secondary};
+  `,
 };
 
 const sizeMap = {
@@ -85,6 +91,8 @@ const sizeMap = {
     font-size: 18px;
   `,
   full: css`
+    font-size: 18px;
+    height: 48px;
     width: 100%;
   `,
   square: css`

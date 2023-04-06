@@ -6,9 +6,11 @@ export const Textfield: FC<IProps> = ({
   defaultValue,
   variant,
   placeholder,
+  type,
   onChange,
+  ...rest
 }) => {
-  const [innerValue, setInnerValue] = useState(defaultValue);
+  const [innerValue, setInnerValue] = useState(defaultValue || '');
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
     onChange && onChange(e);
@@ -20,7 +22,9 @@ export const Textfield: FC<IProps> = ({
       value={innerValue}
       variant={variant}
       placeholder={placeholder}
+      type={type}
       onChange={handleChange}
+      {...rest}
     />
   );
 };

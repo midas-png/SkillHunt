@@ -14,11 +14,11 @@ const variantMap = {
 };
 
 export const TextfieldComponent = styled.input<IProps>`
-  font-size: 25px;
+  font-size: 19px;
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  padding-left: 5px;
+  padding: 10px 5px;
   outline: none;
   ${({ variant = 'primary' }) => variantMap[variant]};
 `;
