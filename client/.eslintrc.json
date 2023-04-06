@@ -79,5 +79,14 @@
 		"react/react-in-jsx-scope": "off",
 		"react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
 		"react/no-unescaped-entities": "off"
-	}
+	},
+	"overrides": [
+  {
+    "files": ["src/store/reducers/*.ts"],
+    "rules": {
+		"import/no-default-export": "off"
+    }
+  }
+]
+
 }

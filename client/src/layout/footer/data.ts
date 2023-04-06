@@ -26,7 +26,7 @@ export const NAVIGATIONS = [
         linkTo: '/',
       },
       {
-        label: 'Sign up',
+        label: 'Explore profiles',
         linkTo: '/',
       },
     ],

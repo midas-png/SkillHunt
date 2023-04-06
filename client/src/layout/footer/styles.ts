@@ -13,6 +13,7 @@ export const FooterWrapper = styled.div`
 export const EmailSocialsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 35px;
 `;
