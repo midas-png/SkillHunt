@@ -1,10 +1,11 @@
 import { useState, FC, ChangeEvent } from 'react';
 import { IProps } from './props';
-import { TextfieldComponent } from './styles';
+import { ComponentWrapper, TextfieldComponent, ErrorMessage } from './styles';
 
 export const Textfield: FC<IProps> = ({
   defaultValue,
   variant,
+  error,
   placeholder,
   type,
   onChange,
@@ -18,13 +19,17 @@ export const Textfield: FC<IProps> = ({
   };
 
   return (
-    <TextfieldComponent
-      value={innerValue}
-      variant={variant}
-      placeholder={placeholder}
-      type={type}
-      onChange={handleChange}
-      {...rest}
-    />
+    <ComponentWrapper>
+      <TextfieldComponent
+        value={innerValue}
+        variant={variant}
+        placeholder={placeholder}
+        type={type}
+        error={error}
+        onChange={handleChange}
+        {...rest}
+      />
+      {error && <ErrorMessage>{error}</ErrorMessage>}
+    </ComponentWrapper>
   );
 };
