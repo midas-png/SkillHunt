@@ -1,7 +1,6 @@
-from django.urls import path
-
-from .healthcheck import *
+from django.urls import path, include
 
 urlpatterns = [
-    path('', healthcheck),
+    path('', include('base.urls.healthcheck')),
+    path('auth/', include("base.urls.authentication")),
 ]

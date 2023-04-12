@@ -33,7 +33,7 @@ SECRET_KEY = "django-insecure-i&__-v*g^_2942a998&aaph_39h1$e!69!+nv@r&e@m^i(oz3o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['85.193.84.195', '127.0.0.1']
+ALLOWED_HOSTS = ['85.193.84.195', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -45,8 +45,15 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    "base.apps.BaseConfig"
+
+    "rest_framework",
+    "drf_yasg",
+    "base.apps.BaseConfig",
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -124,9 +131,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+AUTH_USER_MODEL = 'base.User'
