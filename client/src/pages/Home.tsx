@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import {
   Hero,
   Benefits,
@@ -8,7 +9,7 @@ import {
   FAQs,
 } from 'components';
 
-export const Home = () => (
+export const Home: FC = () => (
   <>
     <Hero />
     <Benefits />

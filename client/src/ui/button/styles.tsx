@@ -79,7 +79,7 @@ const sizeMap = {
     padding: 6px 12px;
   `,
   medium: css`
-    height: 40px;
+    height: 45px;
     min-width: 120px;
     padding: 0 15px;
     font-size: 14px;

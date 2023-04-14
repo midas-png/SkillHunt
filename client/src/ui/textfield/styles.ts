@@ -13,12 +13,26 @@ const variantMap = {
   `,
 };
 
+const extentMap = {
+  medium: css`
+    height: 100%;
+    width: 250px;
+  `,
+  large: css`
+    height: 100%;
+    width: 350px;
+  `,
+  full: css`
+    height: 100%;
+    width: 100%;
+  `,
+};
+
 export const ComponentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
   height: 100%;
-  width: 100%;
 `;
 
 export const TextfieldComponent = styled.input<IProps>`
@@ -29,6 +43,7 @@ export const TextfieldComponent = styled.input<IProps>`
   padding: 10px 5px;
   outline: none;
   ${({ variant = 'primary' }) => variantMap[variant]}
+  ${({ extent = 'full' }) => extentMap[extent]}
   ${({ error }) =>
     error &&
     `
