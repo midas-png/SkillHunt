@@ -1,8 +1,9 @@
 import { FC } from 'react';
-import { VacanciesHead } from 'components';
+import { VacanciesSearch, VacanciesResult } from 'components';
 
 export const Vacancies: FC = () => (
   <>
-    <VacanciesHead />
+    <VacanciesSearch />
+    <VacanciesResult />
   </>
 );

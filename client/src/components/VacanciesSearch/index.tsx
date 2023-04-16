@@ -9,7 +9,7 @@ import {
 import { VacanciesMenu } from './Menu';
 import { Button, Textfield, Title } from 'ui';
 
-export const VacanciesHead = () => {
+export const VacanciesSearch = () => {
   return (
     <VacanciesHeadWrapper>
       <VacanciesSearchWrapper>
