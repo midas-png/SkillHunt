@@ -13,11 +13,13 @@ interface Vacancies {
 interface VacanciesState {
   type: string;
   vacancies: Array<Vacancies>;
+  search: string;
 }
 
 const initialState: VacanciesState = {
   type: 'ALL',
   vacancies: [],
+  search: sessionStorage.getItem('searchVacancies') || '',
 };
 
 export const vacanciesSlice = createSlice({
@@ -29,6 +31,9 @@ export const vacanciesSlice = createSlice({
     },
     setVacancies(state, action: PayloadAction<Array<Vacancies>>) {
       state.vacancies = action.payload;
+    },
+    setSearch(state, action: PayloadAction<string>) {
+      state.search = action.payload;
     },
   },
 });

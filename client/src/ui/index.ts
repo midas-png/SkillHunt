@@ -5,3 +5,5 @@ export { Textfield } from './textfield';
 export { Faq } from './faq';
 export { Modal } from './modal';
 export { VacancyCard } from './vacancyCard';
+export { Select } from './select';
+export { Range } from './range';

@@ -16,11 +16,11 @@ const variantMap = {
 const extentMap = {
   medium: css`
     height: 100%;
-    width: 250px;
+    min-width: 200px;
   `,
   large: css`
     height: 100%;
-    width: 350px;
+    min-width: 350px;
   `,
   full: css`
     height: 100%;
@@ -28,17 +28,18 @@ const extentMap = {
   `,
 };
 
-export const ComponentWrapper = styled.div`
+export const ComponentWrapper = styled.div<IProps>`
   display: flex;
   flex-direction: column;
   gap: 5px;
   height: 100%;
+  ${({ extent = 'full' }) => extentMap[extent]}
 `;
 
 export const TextfieldComponent = styled.input<IProps>`
   font-size: 19px;
   height: 100%;
-  width: 100%;
+  width: fit-content;
   border-radius: 4px;
   padding: 10px 5px;
   outline: none;
@@ -53,4 +54,9 @@ export const TextfieldComponent = styled.input<IProps>`
 
 export const ErrorMessage = styled.span`
   color: #f00;
+`;
+
+export const TextfieldLabel = styled.span`
+  font-size: 10px;
+  letter-spacing: 0.5px;
 `;

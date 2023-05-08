@@ -40,6 +40,7 @@ export const CardInfoWrapper = styled.div`
 
 export const CardTitle = styled.span`
   font-size: 18px;
+  font-weight: 700;
   letter-spacing: 0.6px;
   color: ${({ theme }) => theme.palette.secondary};
   cursor: pointer;

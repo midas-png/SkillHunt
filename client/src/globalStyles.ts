@@ -6,5 +6,6 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: ${({ theme }) => theme.fontFamily.primary};
+    text-decoration: none;
   }
 `;

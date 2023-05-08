@@ -25,8 +25,8 @@ export const VacanciesTypesWrapper = styled.div`
 
 export const SearchWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
   gap: 5px;
+  margin-left: auto;
 `;
 
 export const VacanciesFiltersWrapper = styled.div`
@@ -43,4 +43,11 @@ export const VacanciesFiltersWrapper = styled.div`
     height: 50%;
     width: 100%;
   }
+`;
+
+export const FiltersMenuWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
 `;

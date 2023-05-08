@@ -5,5 +5,6 @@ export {
   useToggle,
   useAppDispatch,
   useAppSelector,
+  useOutsideClick,
 } from './hooks';
 export { PrivateRoute } from './privateRoute';

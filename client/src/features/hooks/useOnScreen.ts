@@ -1,4 +1,4 @@
-import { useState, useEffect, MutableRefObject } from 'react';
+import { useState, useLayoutEffect, MutableRefObject } from 'react';
 
 export const useOnScreen = (
   ref: MutableRefObject<HTMLElement>,
@@ -6,7 +6,7 @@ export const useOnScreen = (
 ) => {
   const [isIntersecting, setIntersecting] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIntersecting(entry.isIntersecting);

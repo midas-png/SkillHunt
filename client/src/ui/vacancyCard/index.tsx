@@ -32,7 +32,9 @@ export const VacancyCard: FC<IProps> = ({
         </CardSubtitle>
         <CardEmployees>{employees} Active Employees</CardEmployees>
       </CardInfoWrapper>
-      <Button>{apply === 'direct' ? 'Apply Direct' : 'External Apply'}</Button>
+      <Button variant='secondary'>
+        {apply === 'direct' ? 'Apply Direct' : 'External Apply'}
+      </Button>
     </CardWrapper>
   );
 };

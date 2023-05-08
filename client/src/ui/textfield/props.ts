@@ -7,6 +7,7 @@ type Size = 'medium' | 'large' | 'full';
 export interface IProps extends InputHTMLAttributes<HTMLInputElement> {
   defaultValue?: string | number | readonly string[] | undefined;
   variant?: Variant;
+  label?: string;
   type?: string;
   extent?: Size;
   error?: string;
