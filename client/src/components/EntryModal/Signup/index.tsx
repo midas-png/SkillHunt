@@ -12,6 +12,7 @@ import {
   ModalTermsLink,
 } from './styles';
 import { signupSchema } from './schema';
+import { RoleMenu } from './menu';
 import { useAppDispatch } from 'features';
 import { modalSlice } from 'store';
 import { Button, Title, Textfield } from 'ui';
@@ -37,6 +38,7 @@ export const SignupModal = () => {
     <SignupModalWrapper>
       <Title fontSize={30}>Sign Up</Title>
       <FormWrapper>
+        <RoleMenu />
         <Textfield
           placeholder='Email'
           error={errors.email?.message}
