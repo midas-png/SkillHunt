@@ -5,7 +5,7 @@ from base import models
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.User
-        fields = ['id', 'email', 'password']
+        fields = ['id', 'email', 'password', 'user_type']
         extra_kwargs = {
             'password': {'write_only': True}
         }
@@ -17,3 +17,12 @@ class UserSerializer(serializers.ModelSerializer):
             instance.set_password(password)
         instance.save()
         return instance
+
+
+class UserGetSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.User
+        fields = ['id', 'email', 'password', 'user_type']
+        extra_kwargs = {
+            'password': {'write_only': True}
+        }

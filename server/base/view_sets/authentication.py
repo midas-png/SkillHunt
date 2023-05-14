@@ -25,6 +25,7 @@ class SignIn(APIView):
 
         payload = {
             'id': user.id,
+            'user_type': user.user_type,
             'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=60),
             'iat': datetime.datetime.utcnow()
         }

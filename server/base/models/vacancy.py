@@ -1,8 +1,7 @@
-import datetime
-
+from django.core.validators import MinValueValidator
 from django.db import models
-from django.core.validators import MaxValueValidator, MinValueValidator
-from . import company
+
+from . import user
 
 
 class Vacancy(models.Model):
@@ -14,7 +13,7 @@ class Vacancy(models.Model):
     employment_type = models.CharField(max_length=100, default='')
     category = models.CharField(max_length=100, default='')
 
-    company_id = models.ForeignKey(to=company.Company, on_delete=models.CASCADE)
+    company_id = models.ForeignKey(to=user.User, on_delete=models.CASCADE)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
